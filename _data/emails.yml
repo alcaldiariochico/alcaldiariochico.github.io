@@ -1,0 +1,22 @@
+- name: Despacho del Alcalde
+  mail: despacho@alcaldiariochico.com.ve
+- name: Secretaria General
+  mail: secretariagral@alcaldiariochico.com.ve
+- name: Dirección de Hacienda
+  mail: hacienda@alcaldiariochico.com.ve
+- name: Dirección de Catastro e Ingeniería
+  mail: ingenieria@alcaldiariochico.com.ve
+- name: Administración
+  mail: administracion@alcaldiariochico.com.ve
+- name: Dirección de Deportes
+  mail: deportes@alcaldiariochico.com.ve
+- name: Dirección de Cultura
+  mail: cultura@alcaldiariochico.com.ve
+- name: Dirección Social
+  mail: social@alcaldiariochico.com.ve
+- name: Dirección de Turismo
+  mail: turismo@alcaldiariochico.com.ve
+- name: Dirección de Agricultura
+  mail: agricola@alcaldiariochico.com.ve
+- name: Emprendimientos
+  mail: emprendimientos@alcaldiariochico.com.ve

@@ -1,0 +1,16 @@
+<header class="bg-white">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <img src="/assets/images/gbv.png" class="h-16" alt="..." srcset="">
+        <img src="/assets/images/alcaldia_bolivariana_m_paez.png" class="h-16" alt="...">
+      </div>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        {% for item in site.data.navigation %}
+        <a 
+        class="mr-5 text-gray-brand font-medium px-2 py-2 hover:border-b hover:border-b-1 hover:border-blue-brand" 
+        href="{{ item.link }}"
+        >{{item.name}}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>

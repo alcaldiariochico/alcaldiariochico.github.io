@@ -1,0 +1,12 @@
+- name: Inicio
+  link: /
+- name: La Alcaldía
+  link: /alcaldia.html
+- name: EL Municipio
+  link: /municipio.html
+- name: Servicios
+  link: /servicios.html
+- name: Turismo
+  link: /turismo.html
+- name: Contactos
+  link: /contactos.html

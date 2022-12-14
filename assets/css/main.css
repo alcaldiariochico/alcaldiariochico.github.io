@@ -1,0 +1,50 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply inline-block text-3xl my-4 border-b border-b-2 border-b-red-brand;
+}
+
+ul {
+  @apply list-disc list-inside marker:text-red-brand;
+}
+
+ul li {
+  @apply px-2 py-2;
+}
+
+.post {
+  @apply max-w-7xl text-lg text-gray-brand;
+}
+
+.post header {
+  @apply max-w-7xl my-10;
+}
+
+.post header h1 {
+  @apply text-3xl font-bold text-blue-brand;
+}
+
+.post header p {
+  @apply text-xl text-slate-700;
+}
+
+.post article {
+  @apply w-full mx-auto p-2;
+}
+
+.post article img {
+  @apply flex flex-row mx-auto justify-between items-center rounded rounded-md h-96;
+}
+
+.post article p {
+  @apply leading-relaxed my-4;
+}
+
+.post footer {
+  @apply w-full h-24;
+}
