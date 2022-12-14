@@ -2,6 +2,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Alcaldía Rio Chico" # the name of your site, e.g. ACME Corp.
 email: webmaster@alcaldiariochico.com.ve
+timezone: America/Caracas
 
 # Author
 author: Laymont Arratia
@@ -9,13 +10,6 @@ author_email: laymont@gmail.com
 author_website: laymont.github.io
 
 # Social links
-twitter_username:
-github_username:
-facebook_username:
-instagram_username:
-youtube_username:
-tiktok_username:
-
 
 defaults:
   -
@@ -49,6 +43,23 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-admin
+
+# Handling Reading
+safe                : false
+include             : [".htaccess"]
+exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter : false
+
+# Conversion
+markdown            : kramdown
+highlighter         : rouge
+lsi                 : false
+excerpt_separator   : "\n\n"
+incremental         : false
+
 
 postcss:
   cache: false
