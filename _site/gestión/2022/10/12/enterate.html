@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-    <div>
-      <header class="bg-white">
+    <div class="flex flex-col h-screen justify-between">
+      <header>
+        <header class="bg-white">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <div class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
         <img src="/assets/images/gbv.png" class="h-16" alt="..." srcset="">
@@ -49,15 +50,12 @@
       </nav>
     </div>
   </header>
-    </div>
-    <div class="max-w-7xl mx-auto">
-      <div class="post">
-    <header>
-        <h1>Se logro la entrega</h1>
-        <p>12 Oct 2022 - Prensa Municipio Páez</p>
-    </header>
-    <article>
-        <p><img src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/311164010_491579586347200_3850284370463411279_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=W1aeZ1Mnc9sAX8psD8v&amp;_nc_ht=scontent-mia3-2.xx&amp;oh=00_AfC6xxIWMBt0ikrjobyhv18YcSYIKMjBvhuOewopfwVVzA&amp;oe=639F176B" alt="img" /></p>
+      </header>
+      <main class="container max-w-7xl mx-auto py-12 flex flex-row justify-between items-start space-x-8">
+        <div class="w-2/3 post">
+          <span class="inline-block w-full">12 October 2022</span>
+          <h1>Se logro la entrega</h1>
+            <p><img src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/311164010_491579586347200_3850284370463411279_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=W1aeZ1Mnc9sAX8psD8v&amp;_nc_ht=scontent-mia3-2.xx&amp;oh=00_AfC6xxIWMBt0ikrjobyhv18YcSYIKMjBvhuOewopfwVVzA&amp;oe=639F176B" alt="img" /></p>
 
 <p><strong>#Entérate</strong>
 El Alcalde Jesús Agustín Monterola, a través de la dirección del despacho de la Alcaldía Bolivariana del Municipio Páez y en articulación con la alcaldía del municipio Zamora y la Dirección de Registro Civil de dicha entidad, se logro la entrega de 30 Nuevas Partidas de Nacimiento a Madres que dieron a Luz en la ciudad de Guatire.</p>
@@ -66,8 +64,35 @@ El Alcalde Jesús Agustín Monterola, a través de la dirección del despacho de
 Beneficiarios expresaron su agradecimiento al Gobierno Municipal ya que a las problemáticas de Transporte, Horarios, y situaciones que se le presentaba no habían logrado obtener sus actas de Nacimiento y gracias al Alc. Monterola y todo su Gabinete ya cuentan con este documento.
 <strong>#RioChicoTuDestino</strong></p>
 
-    </article>
-    <footer>
+        </div>
+        <div class="w-2/6">
+            <div class="p-4 rounded border shadow-md">
+                <h1>Otras noticias</h1>
+                
+                
+                <article class="p-4 text-sm">
+                    <a class="border-b border-b-blue-brand" href="/gesti%C3%B3n/2022/10/21/enterate.html">Escarificación, Bacheo y asfaltado.</a>
+                    <sup class="text-red-brand font-bold">
+                        <time datetime="2022-10-21">21 October 2022</time>
+                    </sup> 
+                </article>
+                
+                
+                
+                <article class="p-4 text-sm">
+                    <a class="border-b border-b-blue-brand" href="/gesti%C3%B3n/2022/10/19/enterate.html">Recuperación de espacios.</a>
+                    <sup class="text-red-brand font-bold">
+                        <time datetime="2022-10-19">19 October 2022</time>
+                    </sup> 
+                </article>
+                
+                
+                
+                
+            </div>
+        </div>
+      </main>
+      <footer>
         <footer class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
@@ -181,8 +206,7 @@ Beneficiarios expresaron su agradecimiento al Gobierno Municipal ya que a las pr
       </div>
     </div>
   </footer>
-    </footer>
-</div>
+      </footer>
     </div>
   </body>
 </html>

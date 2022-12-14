@@ -1,1 +1,1 @@
-Sitemap: https://alcaldiariochico.github.io/sitemap.xml
+Sitemap: /sitemap.xml

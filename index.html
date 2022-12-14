@@ -17,8 +17,8 @@ title: "Inicio"
           <img class="object-cover object-center rounded" alt="hero" src="assets/images/640px-Venezuela_-_Miranda_-_Páez.svg.png">
         </div>
         <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">MUNICIPIO
-            <br class="hidden lg:inline-block">PÁEZ
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">MUNICIPIO PÁEZ
+            <!-- <br class="hidden lg:inline-block"> -->
           </h1>
           <p class="mb-8 leading-relaxed">
             Es uno de los 21 municipios que integran el Estado Miranda, Venezuela. Posee una superficie de 963 km² y tiene una población de 37 944 habitantes. 
@@ -28,7 +28,7 @@ title: "Inicio"
           <div class="p-10">  
             <!--Card 1-->
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-              <h2>Haciendo Patria...</h2>
+              <h2 class="text-red-brand font-medium italic">Haciendo Patria...</h2>
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Jesús Agustin Monterola Peña</div>
                 <p class="text-gray-700 text-base">
@@ -129,7 +129,9 @@ title: "Inicio"
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           <div class="p-4 md:w-1/3 flex">
             <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-brand text-white mb-4 flex-shrink-0">
-              
+              <object data="/assets/images/clima_ico.svg" type="image/svg+xml">
+                <img src="/assets/images/clima_ico.svg" alt="clima">
+              </object>
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Clima</h2>
@@ -145,8 +147,10 @@ title: "Inicio"
             </div>
           </div>
           <div class="p-4 md:w-1/3 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-brand text-white mb-4 flex-shrink-0">
-              
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-brand text-white mb-4 text-xl flex-shrink-0">
+              <object data="/assets/images/ecosistema_ico.svg" type="image/svg+xml">
+                <img src="/assets/images/ecosistema_ico.svg" alt="clima">
+              </object>
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Ecosistema</h2>
@@ -162,8 +166,10 @@ title: "Inicio"
             </div>
           </div>
           <div class="p-4 md:w-1/3 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-brand text-white mb-4 flex-shrink-0">
-              
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-brand text-white text-xl mb-4 flex-shrink-0">
+              <object data="/assets/images/fauna_ico.svg" type="image/svg+xml">
+                <img src="/assets/images/fauna_ico.svg" alt="clima">
+              </object>
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Fauna</h2>
@@ -181,13 +187,16 @@ title: "Inicio"
       </div>
     </section>
 
-    <section id="noticias" class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+    <section id="noticias" class="text-gray-600 body-font bg-[url('../images/fondo_bandera_vzla.png')] bg-no-repeat bg-fill bg-center">
+      <div class="p-4">
+        <h1>Noticias</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam?</p>
+      </div>
+      <div class="container px-5 py-6 mx-auto">
         <div class="flex flex-wrap -m-4">
           {% for post in site.posts %}
           <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
-              <!-- <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"> -->
+            <div class="h-full bg-white border-2 border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
               <div class="p-6">
                 <h2 class="tracking-widest text-xs title-font font-medium text-red-brand mb-1">{{ post.date | date_to_string }}</h2>
                 <h1 class="title-font text-lg font-medium italic text-slate-700 mb-3">{{ post.title }}</h1>
