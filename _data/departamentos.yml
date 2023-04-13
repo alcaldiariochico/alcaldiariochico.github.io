@@ -1,0 +1,115 @@
+- direccion: "Ingeniería Municipal"
+  has_servicios: TRUE
+  servicios: 
+    
+    - nombre: "Conformidad de Uso"
+    - descripcion: "Es la certificación que se otorga, previa solicitud del interesado, a todo inmueble que pretenda instalar un comercio, oficina, fábrica, centro asistencial o educacional, ejerciendo una actividad conforme a la permitida por la ordenanza de zonificación vigente, para posteriormente solicitar su respectiva licencia de actividades económicas."
+    - requerimientos: >
+        "(*) Si es un nuevo usuario debe registrarse en el sistema"
+        "Copia de cédula catastral vigente"
+        "Copia del Documento de Propiedad o Contrato de Arrendamiento debidamente protocolizado en el cual se especifique los metros cuadrados del inmueble"
+        "Declaración jurada suscrita por el propietario del inmueble en caso de que la solicitud sea hecha por un arrendatario."
+        "Copia del Registro Mercantil y Numero de RIF del solicitante"
+        "Copia de la cédula de identidad del solicitante y autorizado para la gestión del trámite"
+        "Copia de Solvencia Municipal sobre impuestos de inmuebles urbanos a nombre del propietario actual o de estado de cuenta en cero (0)."
+        "Copia de Solvencia de Aseo Urbano debidamente certificada"
+        "Copia del plano de ubicación del área donde funcionara la actividad solicitada dentro del nivel o planta, correspondiente a la constancia de cumplimiento de variables urbanas en edificaciones primeramente identificadas"
+        "(*) En caso de no existir el permiso de construcción correspondiente, deberán consignar plano del levantamiento arquitectónico debidamente acotado e indicando los ambientes a escala no menor a 1: 100 (resaltar en ambos casos el espacio donde funcionará la actividad)."
+        "Fotografía del área donde funcionará la actividad solicitada (espacios internos y externos) y fachada de la edificación (MÍNIMO 3 FOTOS)."
+        "En el caso de Educacionales: Copia del informe de revisión emanado de la Fundación de Edificaciones y Dotaciones Educativas (F.E.D.E.) (no mayor a un año de haber sido expedida)"
+        "En el caso de Educacionales: Copia del oficio emanado por esta Dirección, en el cual fue aprobado el Uso Complementario Educacional."
+        "En el caso de Educacionales: Copia del Informe de inspección de riesgo emanado del Instituto de Prevención y Protección ciudadana del Municipio Sucre"
+        "En el caso de sectores populares: Plano de Ubicación para Servicios y Conformidad de uso” emitido por la Dirección de Catastro Municipal"
+        "En el caso de sectores populares: Carta Notariada mediante la cual el propietario y/o el arrendatario, asume la responsabilidad total y absoluta por los daños y perjuicios que el inmueble pudiera ocasionar a terceros: tanto por vicios ocultos en la construcción de la edificación, como por derrumbes."
+        "Original y dos (2) copias del Comprobante de Cancelación de la Tasa Administrativa para el momento del retiro del oficio"
+    - has_costo: true
+    - costos: 
+       - descripcion: "10 UT a la Gobernación del Estado Bolivariano de Miranda por concepto de Timbres Fiscales"
+         moneda: "Unidad Tributaria"
+         precio: 10
+       - descripcion: "Tasa Administrativa de conformidad con la ordenanza de Tasas por servicios Administrativos y Uso de Bienes Municipales Vigente"
+         moneda: "UT"
+         precio: NULL
+    
+    - nombre: "Permiso de Construcción"
+    - descripcion: NULL
+    - requerimientos: >
+        "requerimiento 1"
+        "requerimiento 2"
+        "requerimiento 3"
+    - has_costo: FALSE
+    - costos: NULL
+
+- direccion: "Catastro"
+  has_servicios: TRUE
+  servicios: 
+    
+    - nombre: "Expedición de Cédula Catastral"
+    - descripcion: "Cuando se registra el inmueble por primera vez ante la dirección de Catastro y número de cuenta de inmuebles urbanos (tributo por inmuebles urbanos)."
+    - requerimientos: >
+        "Pago de Tasa Administrativa."
+        "Pago de la Unidad Tributaria."
+    - has_costo: true
+    - costos: 
+       - descripcion: "Pago Tasa Administrativa"
+         moneda: "(₽) Petros"
+         precio: 0.04
+       - descripcion: "Pago Unidad Tributaria, *5 U.T. Persona Natural y 10 U.T. Persona Jurídica"
+         moneda: "Unidad Tributaria"
+         precio: 5
+    
+    - nombre: "Actualización de Cédula Catastral"
+    - descripcion: "Cuando el inmueble ya está inscrito y en sistema aparece a nombre del propietario actual, dándole vigencia a la ficha para los distintos trámites."
+    - requerimientos: >
+        "Pago de Tasa Administrativa."
+        "Pago de la Unidad Tributaria."
+    - has_costo: true
+    - costos: 
+       - descripcion: "Pago Tasa Administrativa"
+         moneda: "(₽) Petros"
+         precio: 0.04
+       - descripcion: "Pago Unidad Tributaria, *5 U.T. Persona Natural y 10 U.T. Persona Jurídica"
+         moneda: "Unidad Tributaria"
+         precio: 5
+
+    - nombre: "Constancia de Ruralidad"
+    - descripcion: "lorem ipsum labore enim nisi eiusmod consequat dolore."
+    - requerimientos: >
+        "Ea nisi Lorem amet officia dolor do esse nulla commodo proident."
+        "Velit eu non ex anim anim excepteur dolor et et velit ipsum."
+    - has_costo: true
+    - costos: 
+       - descripcion: "Pago Tasa Administrativa"
+         moneda: "(₽) Petros"
+         precio: 1
+       - descripcion: "Pago Unidad Tributaria, *5 U.T. Persona Natural y 10 U.T. Persona Jurídica"
+         moneda: "Unidad Tributaria"
+         precio: 5
+
+    - nombre: "Pago de Propiedad y Mobiliario"
+    - descripcion: "lorem ipsum labore enim nisi eiusmod consequat dolore."
+    - requerimientos: >
+        "Ea nisi Lorem amet officia dolor do esse nulla commodo proident."
+        "Velit eu non ex anim anim excepteur dolor et et velit ipsum."
+    - has_costo: true
+    - costos: 
+       - descripcion: "Pago Tasa Administrativa"
+         moneda: "(₽) Petros"
+         precio: 1
+       - descripcion: "Pago Unidad Tributaria, *5 U.T. Persona Natural y 10 U.T. Persona Jurídica"
+         moneda: "Unidad Tributaria"
+         precio: 5
+
+    - nombre: "Deslinde y Mesura"
+    - descripcion: "Definir o determinar los límites de separación de una propiedad rústica o urbana no edificada."
+    - requerimientos: >
+        "Ea nisi Lorem amet officia dolor do esse nulla commodo proident."
+        "Velit eu non ex anim anim excepteur dolor et et velit ipsum."
+    - has_costo: true
+    - costos: 
+       - descripcion: "Pago Tasa Administrativa"
+         moneda: "(₽) Petros"
+         precio: 1
+       - descripcion: "Pago Unidad Tributaria, *5 U.T. Persona Natural y 10 U.T. Persona Jurídica"
+         moneda: "Unidad Tributaria"
+         precio: 5
