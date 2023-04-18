@@ -47,5 +47,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require("tailwindcss-debug-screens")],
+  plugins: [
+    require("tailwindcss-debug-screens")
+  ],
 };
