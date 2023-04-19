@@ -1,16 +1,42 @@
-<header class="bg-white">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<header class="px-4 border-b-2 border-b-yellow-300 md:bg-[url('../images/navbar_background.png')] bg-no-repeat md:bg-cover bg-center">
+  <nav>
+    <div class="flex flex-wrap items-center justify-between md:p-0">
       <div class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <img src="/assets/images/gbv.png" class="h-16" alt="..." srcset="">
-        <img src="/assets/images/alcaldia_bolivariana_m_paez.png" class="h-16" alt="...">
+        <img src="/assets/images/gbv.png" class="h-12" alt="..." srcset="">
+        <img src="/assets/images/alcaldia_bolivariana_m_paez.png" class="h-12"
+          alt="...">
       </div>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        {% for item in site.data.navigation %}
-        <a 
-        class="mr-5 text-gray-brand font-medium px-2 py-2 hover:border-b hover:border-b-1 hover:border-blue-brand" 
-        href="{{ item.link }}"
-        >{{item.name}}</a>
-        {% endfor %}
-      </nav>
+      <div class="p-3 md:hidden">
+        <button id="menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div id="menu" class="hidden md:block">
+        <ul class="items-center w-screen md:w-auto md:flex">
+          {% for item in site.data.navigation %}
+          <li class="p-4">
+            <a class="text-base text-gray-800 font-medium hover:border-b hover:border-b-1 hover:border-gray-800" href="{{ item.link }}">{{item.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+  <script>
+    const menubtn = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+    menubtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    })
+    const drpbtn = document.getElementById('drp-btn');
+    const drpList = document.getElementById('drp-list');
+    drpbtn.addEventListener('click', () => {
+      drpList.classList.toggle('hidden');
+    })
+
+  </script>
+</header>
